@@ -112,7 +112,7 @@
 
 .background-container2 {
     background-image: url("building.PNG");
-    height: 80rem;
+    height: 90rem;
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@
 
 .landing-third {
     position: absolute;
-    top: 175%;
+    top: 250%;
     left: 0%;
     width: 100%;
 }
@@ -193,11 +193,41 @@
     color: black;
 }
 
-.why-integra {
+.business-pic {
+    width: 600px;
+}
+
+.business-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-info {
+    margin-left: 4rem;
+}
+
+.safety-pic {
+    width: 600px;
+}
+
+.safety-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 4rem;
+}
+
+.safety-standards {
     display: flex;
     justify-content: center;
-    column-gap: 10%;
-    margin-top: 3rem;
+    padding-top: 15rem;
+}
+
+.business-standards {
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
 }
 
 .why-integra h2 {
@@ -292,10 +322,6 @@
     height: 5rem;
 }
 
-.button-wrapper:hover {
-    
-}
-
 .button-wrapper button {
     width: 100%;
     height: 100%;
@@ -313,3 +339,22 @@
   }
 
 /* end of main page */
+
+/* animmations */
+.hidden {
+    opacity: 0;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.7, 0.7);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in-element {
+    animation: fade-in 1.4s;
+  }
+/* EO animations */
