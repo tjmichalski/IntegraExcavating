@@ -1,15 +1,15 @@
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     outline: none;
     font-family: 'Bebas Neue', cursive;
     color: white;
 
-  }
-  
-  html {
+}
+
+html {
     font-size: 62.5%;
-  }
+}
 
 
 /* start of main page */
@@ -70,26 +70,26 @@
     transition: all 0.3s ease-in-out;
 }
 
-.navigation-links li:hover > a:before {
+.navigation-links li:hover>a:before {
     visibility: visible;
     transform: scaleX(1);
-  }
+}
 
-  .current a:before {
+.current a:before {
     visibility: visible;
     transform: scaleX(1.2);
-  }
-  
-  .current a {
+}
+
+.current a {
     color: red;
-  }
+}
 
 .navigation-links a {
     text-decoration: none;
     position: relative;
 }
 
-.navigation-links li:hover > a{
+.navigation-links li:hover>a {
     color: black;
 }
 
@@ -102,22 +102,26 @@
 
 .background-container {
     background-image: url("integrallc.PNG");
-    height: 90rem;
+    height: 30rem;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* filter: blur(2px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(2px); */
+}
+
+.main-page {
+    height: 90rem;
 }
 
 .background-container2 {
     background-image: url("building.PNG");
     height: 90rem;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* filter: blur(2px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(2px); */
 }
 
 .landing-third {
@@ -201,6 +205,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 100%;
 }
 
 .business-info {
@@ -216,12 +221,13 @@
     height: 100%;
     object-fit: cover;
     margin-left: 4rem;
+    border-radius: 100%;
 }
 
 .safety-standards {
     display: flex;
     justify-content: center;
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .business-standards {
@@ -259,7 +265,7 @@
     padding-bottom: 10rem;
 }
 
-.landing-third h2{
+.landing-third h2 {
     font-size: 5rem;
 }
 
@@ -267,7 +273,7 @@
     width: 650px;
 }
 
-.map-img-wrapper img{
+.map-img-wrapper img {
     width: 100%;
     height: 100%;
 }
@@ -283,7 +289,7 @@
     font-size: 3.8rem;
 }
 
-.contact-wrapper form{
+.contact-wrapper form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr 1fr;
@@ -336,25 +342,160 @@
     font-size: 2rem;
     text-align: center;
     height: 3rem;
-  }
+}
 
 /* end of main page */
+
+/* contact page */
+.contact-page .landing-portion h1 {
+    text-align: center;
+    font-size: 10rem;
+    padding-top: 4rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.contact-second {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+}
+
+.contact-second h2,
+.contact-second h1,
+p {
+    color: black;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 6rem;
+}
+
+.contact-form input {
+    width: 96.5%;
+    height: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: black;
+}
+
+.contact-form textarea {
+    width: 99%;
+    font-size: 3rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.contact-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0 1rem 0 1rem;
+}
+
+.contact-info h1 {
+    font-size: 6rem;
+    text-decoration: underline;
+    padding: 3rem 0 3rem 0;
+}
+
+.contact-info h2 {
+    font-size: 3.5rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.hours {
+    padding: 3rem 0 3rem 0;
+}
+
+.contact-info p {
+    font-size: 3.5rem;
+}
+
+.contact-info hr {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contact-third {
+    padding: 5rem 20rem 0 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-third h1 {
+    font-size: 6rem;
+    text-decoration: underline;
+    padding-bottom: 3rem;
+    color: black;
+}
+
+.contact-third h2 {
+    font-size: 4rem;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.bio-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 8rem;
+    padding: 5rem 0 5rem 0;
+}
+
+.bio-info {
+    background-color: #D3D3D3;
+    padding: 3rem 4rem 5rem 4rem;
+    width: 60%;
+}
+
+.bio-info p {
+    font-size: 2.5rem;
+}
+
+.bio-pic-container {
+    width: 40%;
+}
+
+.bio-pic-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* EO Contact */
 
 /* animmations */
 .hidden {
     opacity: 0;
-  }
-  
-  @keyframes fade-in {
+}
+
+@keyframes fade-in {
     from {
-      opacity: 0;
-      transform: scale(0.7, 0.7);
+        opacity: 0;
+        transform: scale(0.7, 0.7);
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  .fade-in-element {
+}
+
+.fade-in-element {
     animation: fade-in 1.4s;
-  }
+}
+
 /* EO animations */
